@@ -234,6 +234,7 @@ namespace SERVER
                 m_mainSocket.Listen(4);
                 m_mainSocket.BeginAccept(new AsyncCallback(OnClientConnect), null);
                 lblInfo.Text = "Server started to listen any\nincoming client connections from port 8000";
+                button1.Enabled = true;
             }
             catch (SocketException se)
             {
